@@ -1,7 +1,7 @@
 #WEEK 4 Code
 
 # downloading data
-Url_data <- "https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2FMain_data.csv.bz2"
+Url_data <- "https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2FStormData.csv.bz2"
 
 File_data <- "StormData.csv.bz2"
 if (!file.exists(File_data)) {
@@ -92,4 +92,5 @@ g <- g + theme(plot.title = element_text(hjust = 0.5))
 g <- g + labs(y = "Size of property and crop loss", x = "Event Type")
 g <- g + coord_flip()
 print(g)
+
 
